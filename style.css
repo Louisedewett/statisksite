@@ -1,0 +1,124 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: var(--color-baggrundsfarve);
+}
+
+/*************** Primærfarver *********************/
+:root {
+  --color-baggrundsfarve: #fceee6;
+  --color-card1: #cb9c8b;
+  --color-card2: #ad6c54;
+  --color-card3: #f1cdb9;
+  --color-card4: #ca7b50;
+  --color-card5: #864b2b;
+  --color-card6: #f6915a;
+}
+
+/*************** Overskrift og underskrift *********************/
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/*************** Categories *********************/
+
+.grid1-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card1 {
+  background-color: var(--color-card1);
+  padding: 25px;
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.card2 {
+  background-color: var(--color-card2);
+  padding: 25px;
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.card3 {
+  background-color: var(--color-card3);
+  padding: 25px;
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.card4 {
+  background-color: var(--color-card4);
+  padding: 25px;
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.card5 {
+  background-color: var(--color-card5);
+  padding: 25px;
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.card6 {
+  background-color: var(--color-card6);
+  padding: 25px;
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+/*************** Categories grid *********************/
+@media screen and (min-width: 800px) {
+  .grid1-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
