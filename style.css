@@ -27,12 +27,13 @@ body {
 
 /*************** Overskrift og underskrift *********************/
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  font-family: sans-serif;
 }
 
 /*************** Categories *********************/
@@ -104,6 +105,27 @@ h2 {
   text-align: center;
   text-decoration: none;
   color: black;
+}
+
+/*************** Produkt cards *********************/
+
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  padding: 10px;
 }
 
 /*************** Categories grid *********************/
