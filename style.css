@@ -128,7 +128,7 @@ a {
 
 .card {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1rem;
 }
 
 .product-gallery {
@@ -171,6 +171,61 @@ a {
   margin-top: 4px;
   opacity: 0.8;
   margin: 0 0 12px;
+}
+
+.billede-card {
+  position: relative;
+  display: block;
+}
+
+.soldout {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #8bafcb;
+  color: yellow;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  z-index: 2;
+}
+
+.billede-card img {
+  filter: grayscale(50%);
+  opacity: 0.4;
+}
+
+.billede-card2 {
+  position: relative;
+  display: block;
+}
+
+.discount {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #ff0000;
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  z-index: 2;
+}
+
+.old-price {
+  font-family: sans-serif;
+  color: #676565;
+}
+
+.new-price {
+  font-family: sans-serif;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /*************** Produkt cards *********************/
@@ -218,6 +273,10 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card {
     margin: 0 auto;
   }
 
