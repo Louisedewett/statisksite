@@ -13,7 +13,7 @@ function show(data) {
             <div class="text">
                 <h3>${data.productdisplayname}</h3>
                 <p class="brand"> ${data.brandname}</p>
-                <p class="price"> ${data.price}</p>
+                <p class="price"> ${data.price} kr.</p>
                 <p class="lagerstatus">På lager</p>
                 <button class="knap">Tilføj til kurv</button>
 
