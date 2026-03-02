@@ -1,4 +1,9 @@
-const id = 1163;
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+console.log("id:", id);
+
+//const id = 1163;
 const productURL = "https://kea-alt-del.dk/t7/api/products/" + id;
 const productcontainer = document.querySelector("#productContainer");
 
