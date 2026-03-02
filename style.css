@@ -16,8 +16,8 @@ body {
 
 /*************** Primærfarver *********************/
 :root {
-  --color-baggrundsfarve: #ffffff;
-  --color-card: #8bafcb;
+  --color-baggrundsfarve: #f9f9f5;
+  --color-card: #3e68bd;
 }
 
 /*************** Overskrift og underskrift *********************/
@@ -30,7 +30,7 @@ h1 {
 .bogstavsfarve {
   font-size: 3rem;
   font-family: sans-serif;
-  color: #8bafcb;
+  color: #3e68bd;
 }
 
 h2 {
@@ -144,7 +144,7 @@ a {
   grid-row: span 4;
   padding: 12px;
   background: #ffffff;
-  border: solid #8bafcb 2px;
+  border: solid #3e68bd 2px;
 }
 
 .tesktogpris h3 {
@@ -182,7 +182,7 @@ a {
   position: absolute;
   top: 2px;
   left: 2px;
-  background: #8bafcb;
+  background: #3e68bd;
   color: yellow;
   padding: 15px 25px;
   font-size: 1.1rem;
@@ -191,10 +191,10 @@ a {
   z-index: 2;
 }
 
-.billede-card img {
+/* .billede-card img {
   filter: grayscale(50%);
   opacity: 0.4;
-}
+} */
 
 .billede-card2 {
   position: relative;
@@ -216,10 +216,12 @@ a {
 .old-price {
   font-family: sans-serif;
   color: #676565;
+  text-decoration: line-through;
 }
 
 .new-price {
   font-family: sans-serif;
+  color: red;
 }
 
 .prices {
