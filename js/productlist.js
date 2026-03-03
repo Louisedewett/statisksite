@@ -27,14 +27,35 @@ function showProducts(products) {
                   <a href="product.html?id=${product.id}" class="billede-card"> 
                
                         ${soldout}
+                        ${product.discount > 0 ? `<div class="discount">${product.discount}%</div>` : ""}
                         <img src="https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp" alt="pic1">
                     </a>
                     <div class="produkt-tekst">
                         <div class="tesktogpris">
                             <h3>${product.productdisplayname}</h3>
-                            <p class="price"> ${product.price} kr.</p>
+
+ <div class="pricex2">
+  ${
+    product.discount && product.discount > 0
+      ? `
+        <p class="old-price">${product.price} kr.</p>
+        <p class="new-price">
+          ${(product.price * (1 - product.discount / 100)).toFixed(2)} kr.
+        </p>
+      `
+      : `
+        <p class="price">${product.price} kr.</p>
+      `
+  }
+</div>
+
+
+                          
                         </div>
                         <p class="brand">${product.brandname}</p>
+                      <a href="product.html?id=${product.id}" class="link">Read more</a>
+                            
+
                     </div>
 
                 </div>

@@ -16,27 +16,27 @@ body {
 
 /*************** Primærfarver *********************/
 :root {
-  --color-baggrundsfarve: #f9f9f5;
-  --color-card: #3e68bd;
+  --color-baggrundsfarve: #fffcf8;
+  --color-card: #144bb9;
 }
 
 /*************** Overskrift og underskrift *********************/
 h1 {
   font-size: 3rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-left: 1rem;
 }
 
 .bogstavsfarve {
   font-size: 3rem;
-  font-family: sans-serif;
-  color: #3e68bd;
+  font-family: "Roboto", sans-serif;
+  color: #144bb9;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 4rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
@@ -49,11 +49,13 @@ h2 {
   flex-direction: column;
   gap: 10px;
   margin-left: 0.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .grid1-3 a {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
+  font-size: 1.3rem;
 }
 
 .card1 {
@@ -64,59 +66,6 @@ h2 {
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  color: black;
-}
-
-.card2 {
-  background-color: var(--color-card);
-  padding: 25px;
-  max-width: 250px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-
-.card3 {
-  background-color: var(--color-card);
-  padding: 25px;
-  max-width: 250px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-.card4 {
-  background-color: var(--color-card);
-  padding: 25px;
-  max-width: 250px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-.card5 {
-  background-color: var(--color-card);
-  padding: 25px;
-  max-width: 250px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-.card6 {
-  background-color: var(--color-card);
-  padding: 25px;
-  max-width: 250px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  color: black;
 }
 
 /*************** Produktlist *********************/
@@ -144,13 +93,14 @@ a {
   grid-row: span 4;
   padding: 12px;
   background: #ffffff;
-  border: solid #3e68bd 2px;
+  border: solid #144bb9 2px;
 }
 
 .tesktogpris h3 {
   flex: 1;
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.6rem;
 }
 
 .tesktogpris {
@@ -160,17 +110,22 @@ a {
 }
 
 .price {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0 0 8px;
 }
 
 .brand {
   font-size: 1rem;
-  font-family: sans-serif;
-  color: #555;
-  margin-top: 4px;
+  font-family: "Roboto", sans-serif;
+  color: #424242;
   opacity: 0.8;
   margin: 0 0 12px;
+}
+
+.link {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
 }
 
 .billede-card {
@@ -182,12 +137,12 @@ a {
   position: absolute;
   top: 2px;
   left: 2px;
-  background: #3e68bd;
+  background: #970909;
   color: yellow;
   padding: 15px 25px;
   font-size: 1.1rem;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   z-index: 2;
 }
 
@@ -203,24 +158,24 @@ a {
 
 .discount {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 12px;
+  right: 10px;
   background: #ff0000;
   padding: 10px 10px;
   font-size: 1.1rem;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   z-index: 2;
 }
 
 .old-price {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #676565;
   text-decoration: line-through;
 }
 
 .new-price {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: red;
 }
 
@@ -245,7 +200,7 @@ a {
   color: white;
   padding: 12px;
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   margin: 0 auto;
 }
@@ -257,13 +212,13 @@ a {
   padding: 10px;
 }
 .text h3 {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   margin: 0 0 8px;
 }
 
 .lagerstatus {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   color: #2e7d32;
   margin-bottom: 24px;
@@ -306,6 +261,6 @@ a {
   }
 
   .information img {
-    width: 100%;
+    width: 85%;
   }
 }
