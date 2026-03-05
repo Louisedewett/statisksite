@@ -5,12 +5,27 @@ console.log(myCategory);
 
 //const listURL = "https://kea-alt-del.dk/t7/api/products";
 //const fetchURL = `https://kea-alt-del.dk/t7/api/products?category=${myCategory}`;
-const fetchURL = myCategory ? `https://kea-alt-del.dk/t7/api/products?category=${encodeURIComponent(myCategory)}` : "https://kea-alt-del.dk/t7/api/products";
+const fetchURL = myCategory ? `https://kea-alt-del.dk/t7/api/products?category=${encodeURIComponent(myCategory)}&limit=20` : "https://kea-alt-del.dk/t7/api/products";
 const listContainer = document.querySelector(".product-gallery");
+const sorteringsknap = document.querySelector("#sortbyprice");
+const filtreingsknap = document.querySelector("#filterbycategory");
+
+console.log("knap virker");
+
+let allProducts = [];
 
 function getProducts() {
-  fetch(fetchURL).then((res) => res.json().then((products) => showProducts(products)));
+  fetch(fetchURL)
+    .then((res) => res.json())
+    .then((products) => {
+      allProducts = products;
+      showProducts(allProducts);
+    });
 }
+
+// function getProducts() {
+//   fetch(fetchURL).then((res) => res.json().then((products) => showProducts(products)));
+// }
 
 function showProducts(products) {
   // Start med tom container
@@ -38,9 +53,9 @@ function showProducts(products) {
   ${
     product.discount && product.discount > 0
       ? `
-        <p class="old-price">${product.price} kr.</p>
+        <p class="old-price"> ${product.price} kr.</p>
         <p class="new-price">
-          ${(product.price * (1 - product.discount / 100)).toFixed(2)} kr.
+          Now ${(product.price * (1 - product.discount / 100)).toFixed(2)} kr.
         </p>
       `
       : `
@@ -62,5 +77,20 @@ function showProducts(products) {
     `;
   });
 }
+function sorteringsknapAsc() {
+  console.log("knap virker");
+  const sorted = [...allProducts].sort((a, b) => a.price - b.price);
+  showProducts(sorted);
+}
+
+sorteringsknap.addEventListener("click", sorteringsknapAsc);
+
+function filterByGender(targetGender) {
+  const filtered = allProducts.filter((product) => (product.gender || "").toLowerCase() === targetGender.toLowerCase());
+
+  showProducts(filtered);
+}
+
+filterbycategory.addEventListener("click", () => filterByGender("Women"));
 
 getProducts();
