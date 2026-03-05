@@ -137,7 +137,7 @@ a {
   position: absolute;
   top: 2px;
   left: 2px;
-  background: #970909;
+  background: #7d7d7d;
   color: yellow;
   padding: 15px 25px;
   font-size: 1.1rem;
@@ -170,13 +170,13 @@ a {
 
 .old-price {
   font-family: "Roboto", sans-serif;
-  color: #676565;
+  color: red;
   text-decoration: line-through;
 }
 
 .new-price {
   font-family: "Roboto", sans-serif;
-  color: red;
+  color: #000000;
 }
 
 .prices {

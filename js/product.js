@@ -21,6 +21,7 @@ function show(data) {
                 <p class="price"> ${data.price} kr.</p>
                 <p class="lagerstatus">På lager</p>
                 <button class="knap">Tilføj til kurv</button>
+                
 
             </div>
         </article>
