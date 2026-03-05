@@ -16,7 +16,7 @@ body {
 
 /*************** Primærfarver *********************/
 :root {
-  --color-baggrundsfarve: #fffcf8;
+  --color-baggrundsfarve: #eeecec;
   --color-card: #144bb9;
 }
 
@@ -87,11 +87,23 @@ a {
   gap: 12px;
 }
 
+#sortbyprice,
+#filterbycategory {
+  background-color: rgb(26, 74, 111);
+  color: white;
+  padding: 15px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin: 1rem;
+  display: block;
+}
+
 .product-card {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 4;
   padding: 12px;
+  margin-top: 2rem;
   background: #ffffff;
   border: solid #144bb9 2px;
 }
@@ -229,7 +241,7 @@ a {
   .grid1-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -262,5 +274,11 @@ a {
 
   .information img {
     width: 85%;
+  }
+
+  #sortbyprice,
+  #filterbycategory {
+    display: block;
+    margin: 0 auto 1rem;
   }
 }
